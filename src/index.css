@@ -2147,11 +2147,23 @@ section {
    DIALOGFLOW MESSENGER THEMING
    ================================================ */
 df-messenger {
-  --df-messenger-button-titlebar-color: #0077B6;
-  --df-messenger-chat-background-color: #03045E;
-  --df-messenger-bot-message: #020340;
-  --df-messenger-user-message: #0077B6;
-  --df-messenger-font-color: #CAF0F8;
+  --df-messenger-button-titlebar-color: #0077b6; /* Fallback for launcher */
+  --df-messenger-button-titlebar-font-color: #ffffff;
+  --df-messenger-chat-background-color: #020320;
+  --df-messenger-bot-message: #0a113a; /* Bot bubbles */
+  --df-messenger-user-message: #0096d6; /* User bubbles */
+  --df-messenger-font-color: #e8f4fd;
+  --df-messenger-send-icon: #00b4d8;
+  --df-messenger-user-font-color: #ffffff;
+  --df-messenger-input-box-color: transparent;
+  --df-messenger-input-font-color: #caf0f8;
+  --df-messenger-input-placeholder-font-color: rgba(144, 224, 239, 0.4);
+  /* CHIP STYLING FOR QUICK REPLIES */
+  --df-messenger-chip-border-color: #00b4d8;
+  --df-messenger-chip-background-color: rgba(0, 180, 216, 0.15);
+  --df-messenger-chip-font-color: #caf0f8;
+  /* Global shadow for launcher icon */
+  filter: drop-shadow(0 12px 32px rgba(0, 180, 216, 0.4));
   z-index: 999;
 }
 
