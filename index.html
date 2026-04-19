@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delhi Tourist Helper — Your AI Guide to the Heart of India</title>
+    <meta name="description" content="Explore Delhi like never before. Get personalised tour plans, hotel recommendations, food guides, and local insights powered by our AI chatbot — available 24/7." />
+    <meta name="keywords" content="Delhi tourism, Delhi travel guide, Delhi tourist places, Delhi food guide, Delhi hotels, AI travel assistant, Dialogflow chatbot" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Delhi_tourist_helper"
+      agent-id="55976bc3-e65c-42fd-a14a-e3649e5575ea"
+      language-code="en"
+    ></df-messenger>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
