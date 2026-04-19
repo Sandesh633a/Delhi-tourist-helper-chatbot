@@ -2163,7 +2163,6 @@ df-messenger {
   --df-messenger-chip-background-color: rgba(0, 180, 216, 0.15);
   --df-messenger-chip-font-color: #caf0f8;
   /* Global shadow for launcher icon */
-  filter: drop-shadow(0 12px 32px rgba(0, 180, 216, 0.4));
   z-index: 999;
 }
 
