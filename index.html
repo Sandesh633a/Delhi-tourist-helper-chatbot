@@ -73,47 +73,6 @@
             titlebar.shadowRoot.appendChild(titleStyle);
           }
 
-          // Apply styles to Message List (Background)
-          const messageList = chat.shadowRoot.querySelector('df-message-list');
-          if (messageList && messageList.shadowRoot) {
-            const listStyle = document.createElement('style');
-            listStyle.innerHTML = `
-              .message-list-wrapper {
-                background: linear-gradient(180deg, #020320 0%, #030430 100%) !important;
-                scrollbar-width: thin;
-                scrollbar-color: rgba(0,180,216,0.3) transparent;
-              }
-              .message-list-wrapper::-webkit-scrollbar { width: 6px; }
-              .message-list-wrapper::-webkit-scrollbar-thumb { background: rgba(0,180,216,0.3); border-radius: 4px; }
-              #messageList { padding: 16px !important; }
-              .message { animation: messagePop 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards !important; }
-              @keyframes messagePop {
-                0% { opacity: 0; transform: translateY(10px) scale(0.98); }
-                100% { opacity: 1; transform: translateY(0) scale(1); }
-              }
-            `;
-            messageList.shadowRoot.appendChild(listStyle);
-          }
-
-          // Apply styles to User Input
-          const userInput = chat.shadowRoot.querySelector('df-messenger-user-input');
-          if (userInput && userInput.shadowRoot) {
-            const inputStyle = document.createElement('style');
-            inputStyle.innerHTML = `
-              .input-container {
-                background: rgba(2,3,40,0.95) !important;
-                border-top: 1px solid rgba(0, 180, 216, 0.2) !important;
-                padding: 10px 16px !important;
-              }
-              input {
-                font-family: 'Inter', sans-serif !important;
-                font-size: 0.95rem !important;
-                color: #e8f4fd !important;
-              }
-              input::placeholder { color: rgba(144, 224, 239, 0.4) !important; }
-            `;
-            userInput.shadowRoot.appendChild(inputStyle);
-          }
         }
       });
     </script>
