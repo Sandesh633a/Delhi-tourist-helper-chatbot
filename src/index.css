@@ -2155,9 +2155,9 @@ df-messenger {
   --df-messenger-font-color: #e8f4fd;
   --df-messenger-send-icon: #00b4d8;
   --df-messenger-user-font-color: #ffffff;
-  --df-messenger-input-box-color: transparent;
-  --df-messenger-input-font-color: #caf0f8;
-  --df-messenger-input-placeholder-font-color: rgba(144, 224, 239, 0.4);
+  --df-messenger-input-box-color: #0a113a;
+  --df-messenger-input-font-color: #ffffff;
+  --df-messenger-input-placeholder-font-color: rgba(255, 255, 255, 0.5);
   /* CHIP STYLING FOR QUICK REPLIES */
   --df-messenger-chip-border-color: #00b4d8;
   --df-messenger-chip-background-color: rgba(0, 180, 216, 0.15);
